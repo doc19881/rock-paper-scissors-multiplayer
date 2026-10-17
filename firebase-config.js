@@ -1,8 +1,8 @@
-// Fill these in from Firebase Project settings after creating a Web app.
+// Firebase web app configuration for rps-friends-game.
 export const firebaseConfig = {
-  apiKey: "PASTE_API_KEY_HERE",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_DATABASE.REGION.firebasedatabase.app",
-  projectId: "YOUR_PROJECT_ID",
-  appId: "PASTE_APP_ID_HERE"
+  apiKey: "AIzaSyDxPhCksMmhjHvSW0Y0_cZ5xKnIny4eh7g",
+  authDomain: "rps-friends-game.firebaseapp.com",
+  databaseURL: "https://rps-friends-game-default-rtdb.firebaseio.com",
+  projectId: "rps-friends-game",
+  appId: "1:776934371804:web:ce294fb12e442998739f19"
 };
