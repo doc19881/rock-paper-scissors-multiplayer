@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131c">
+  <title>Rock Paper Scissors — play a friend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><p class="eyebrow">A tiny online showdown</p><h1>Rock <span>Paper</span> Scissors</h1><p class="intro">Make a room, send your friend the code, and see who wins.</p></header>
+    <section class="card setup" id="setup">
+      <label for="room-code">Room code</label><div class="join-row"><input id="room-code" maxlength="6" placeholder="6 letters" autocomplete="off" spellcheck="false"><button class="button secondary" id="join-button">Join room</button></div>
+      <div class="or"><span>or</span></div><button class="button primary" id="create-button">Create a room</button><p class="hint" id="setup-message">Connecting to the game…</p>
+    </section>
+    <section class="card game hidden" id="game">
+      <div class="room-bar"><div><span class="eyebrow">ROOM</span><strong id="room-label">------</strong></div><button class="text-button" id="copy-link">Copy invite link</button></div>
+      <div class="status" id="game-status" aria-live="polite"></div><div class="scoreboard"><div class="score"><span>You</span><strong id="my-score">0</strong></div><div class="round">ROUND <strong id="round-label">1</strong></div><div class="score"><span>Friend</span><strong id="their-score">0</strong></div></div>
+      <div class="hands"><div class="hand"><span class="hand-name">YOU</span><span class="hand-icon" id="my-hand">?</span></div><div class="versus">VS</div><div class="hand"><span class="hand-name">FRIEND</span><span class="hand-icon" id="their-hand">?</span></div></div>
+      <div class="choices" id="choices" aria-label="Choose your move"><button class="choice" data-choice="rock"><span>✊</span><small>Rock</small></button><button class="choice" data-choice="paper"><span>✋</span><small>Paper</small></button><button class="choice" data-choice="scissors"><span>✌️</span><small>Scissors</small></button></div>
+      <p class="result" id="round-result"></p><button class="button primary hidden" id="next-round">Play next round</button><button class="text-button leave" id="leave-room">Leave room</button>
+    </section><footer>Made for friendly competition.</footer>
+  </main><script type="module" src="app.js"></script>
+</body>
+</html>
